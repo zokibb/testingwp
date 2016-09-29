@@ -32,7 +32,7 @@
 		<?php query_posts( "post_type=post&paged=" . $paged . "&posts_per_page=" . $posts_per_page ); ?>
 		<?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'loop', 'style1' ); ?>
+				<?php get_template_part( 'loop', 'style' ); ?>
 			<?php endwhile; ?>
 		<?php endif; ?>
 		<?php load_template( get_template_directory() . '/includes/pagination.php' ); ?>
